@@ -1,0 +1,41 @@
+:root {
+  --win98-gray: #c0c0c0;
+  --win98-gray-light: #dfdfdf;
+  --win98-gray-dark: #808080;
+  --win98-blue: #000080;
+  --win98-blue-light: #1084d0;
+}
+
+.win98-window {
+  @apply bg-[#c0c0c0] border-2 border-[#dfdfdf] border-b-[#808080] border-r-[#808080] shadow-md;
+}
+
+.win98-title-bar {
+  @apply bg-[#000080] text-white px-2 py-1 flex items-center justify-between;
+}
+
+.win98-button {
+  @apply px-4 py-1 bg-[#c0c0c0] border-2 border-[#dfdfdf] border-b-[#808080] border-r-[#808080] 
+         active:border-[#808080] active:border-b-[#dfdfdf] active:border-r-[#dfdfdf]
+         focus:outline-none focus:ring-1 focus:ring-black;
+}
+
+.win98-input {
+  @apply border border-[#808080] bg-white px-2 py-1 focus:outline-none focus:ring-1 focus:ring-black;
+}
+
+.win98-table {
+  @apply border border-[#808080] bg-white;
+}
+
+.win98-table th {
+  @apply bg-[#c0c0c0] px-4 py-1 font-normal border-b border-[#808080];
+}
+
+.win98-table td {
+  @apply px-4 py-1 border-b border-[#808080];
+}
+
+* {
+  font-family: "Lucida Console", Monaco, monospace;
+}

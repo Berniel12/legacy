@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '../styles/win98.css';
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 0, 128, 128;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
